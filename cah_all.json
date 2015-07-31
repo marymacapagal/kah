@@ -1,0 +1,697 @@
+{
+  "blackCards": [
+	{
+		"text": "The best shower scenes have ___.",
+		"pick": 1
+	},
+	{
+		"text": "How do I cure my dramaland hangover?",
+		"pick": 1
+	},
+	{
+		"text": "What makes Round 2 special?",
+		"pick": 1
+	},
+	{
+		"text": "What increases chances of getting pregnant after a one night stand?",
+		"pick": 1
+	},
+	{
+		"text": "What is the secret to a successful contract marriage?",
+		"pick": 1
+	},
+	{
+		"text": "Reply2015 will be about ___.",
+		"pick": 1
+	},
+	{
+		"text": "My Lee Beom Soo fanfic will be called ___ of the Salaryman.",
+		"pick": 1
+	},
+	{
+		"text": "My Kim Soo Hyun fanfic will be called You Who Came For Another ___.",
+		"pick": 1
+	},
+	{
+		"text": "How do I bribe the shareholders?",
+		"pick": 1
+	},
+	{
+		"text": "I would totally watch a 128-episode drama about ___.",
+		"pick": 1
+	},
+	{
+		"text": "The thing that sucks most about being in a 14-episode coma is the lack of ___.",
+		"pick": 1
+	},
+	{
+		"text": "To survive a surprise wormhole trip to Joseon, one must have ___.",
+		"pick": 1
+	},
+	{
+		"text": "Why did the fortune teller say OTP cannot be together?",
+		"pick": 1
+	},
+	{
+		"text": "How do I anger my chaebol mother-in-law?",
+		"pick": 1
+	},
+	{
+		"text": "Why would I break a fake marriage contract with a hot chaebol?",
+		"pick": 1
+	},
+	{
+		"text": "The next big supernatural trend is heroes that are half-human, half-___.",
+		"pick": 1
+	},
+	{
+		"text": "Wearing ___ is the best way to go undercover.",
+		"pick": 1
+	},
+	{
+		"text": "I'm your missing chaebol child and I have a ___-shaped birthmark to prove it.",
+		"pick": 1
+	},
+	{
+		"text": "I have a fantasy drama about waking up with ___.",
+		"pick": 1
+	},
+	{
+		"text": "Episode extensions are like ___, acceptable. But rarely.",
+		"pick": 1
+	},
+	{
+		"text": "The Baeksang for ___ goes to ___.",
+		"pick": 2
+	},
+	{
+		"text": "Secret Garden 2 should be a body swap between ___ and ___.",
+		"pick": 2
+	},
+	{
+		"text": "How was Hyun Bin tricked into doing Hyde, Jekyll, Me?",
+		"pick": 1
+	},
+	{
+		"text": "Most idol actors are like ___, good in small doses.",
+		"pick": 1
+	},
+	{
+		"text": "Kim Nam Gil's next drama death will be caused by ___.",
+		"pick": 1
+	},
+	{
+		"text": "Samsung Galaxy LXIII will come with ___ in the box.",
+		"pick": 1
+	},
+	{
+		"text": "I wouldn't mind an hour long PPL about ___.",
+		"pick": 1
+	},
+	{
+		"text": "___ + ___ = ___",
+		"pick": 3
+	},
+	{
+		"text": "How do you make time jumps more acceptable?",
+		"pick": 1
+	},
+	{
+		"text": "Kdrama kisses are as rare and precious as ___.",
+		"pick": 1
+	},
+	{
+		"text": "It's Okay, It's ___.",
+		"pick": 1
+	},
+	{
+		"text": "OCN's next drama is about a genius who solves crimes using ___.",
+		"pick": 1
+	},
+	{
+		"text": "Na PD should challenge Cha Seung Won to cook steak using ___.",
+		"pick": 1
+	},
+	{
+		"text": "How do you raise your drama's ratings?",
+		"pick": 1
+	},
+	{
+		"text": "I enjoyed Blood because I also like ___.",
+		"pick": 1
+	},
+	{
+		"text": "I'm only watching kdramas for the ___.",
+		"pick": 1
+	},
+	{
+		"text": "I wish there's discounted bulk-shipping for ___.",
+		"pick": 1
+	},
+	{
+		"text": "If my life were a kdrama, my worst enemy would be ___.",
+		"pick": 1
+	},
+	{
+		"text": "If I can throw a kdrama-themed bridal shower, ___ would be first on the list.",
+		"pick": 1
+	},
+	{
+		"text": "Actors who run away from army duty should get a 120-episode show with ___.",
+		"pick": 1
+	},
+	{
+		"text": "___ in dramas always make me cry.",
+		"pick": 1
+	},
+	{
+		"text": "I secretly want to be ___ for a day.",
+		"pick": 1
+	},
+	{
+		"text": "___ is underrated.",
+		"pick": 1
+	},
+	{
+		"text": "___ is overrated.",
+		"pick": 1
+	},
+	{
+		"text": "What does Cha Seung Won's stache remind me of?",
+		"pick": 1
+	},
+	{
+		"text": "This Halloween, I wanna dress up as ___.",
+		"pick": 1
+	},
+	{
+		"text": "Heaven must be full of ___.",
+		"pick": 1
+	},
+	{
+		"text": "Hell must be full of ___.",
+		"pick": 1
+	},
+	{
+		"text": "Why am I still watching this show?",
+		"pick": 1
+	},
+	{
+		"text": "How do I move on from a drama that just ended?",
+		"pick": 1
+	},
+	{
+		"text": "How do I forget a crappy drama?",
+		"pick": 1
+	},
+	{
+		"text": "How do I impress my bias?",
+		"pick": 1
+	},
+	{
+		"text": "What should I send to my idol's fan mail?",
+		"pick": 1
+	},
+	{
+		"text": "What do I bring to a matseon?",
+		"pick": 1
+	},
+	{
+		"text": "What makes me gag when watching kdramas?",
+		"pick": 1
+	},
+	{
+		"text": "When I'm sad, I think of ___ to feel better.",
+		"pick": 1
+	},
+	{
+		"text": "The success of Hallyu can be attributed to ___.",
+		"pick": 1
+	},
+	{
+		"text": "I've seen almost all dramas except that one with ___.",
+		"pick": 1
+	},
+	{
+		"text": "Most celebrity scandals can be solved with ___.",
+		"pick": 1
+	},
+	{
+		"text": "Studies show that 9 out of 10 OTP fights are caused by ___.",
+		"pick": 1
+	},
+	{
+		"text": "Korean dramas and movies are like ___ and ___.",
+		"pick": 2
+	},
+	{
+		"text": "All drama problems can be solved by ___.",
+		"pick": 1
+	},
+	{
+		"text": "Emotional scenes are always made sadder by ___.",
+		"pick": 1
+	},
+	{
+		"text": "Love is the ___.",
+		"pick": 1
+	},
+	{
+		"text": "Next on dramaland OTPs: girl who loves ___ meets guy who likes ___.",
+		"pick": 2
+	},
+	{
+		"text": "How do I hide my crime?",
+		"pick": 1
+	},
+	{
+		"text": "How do I \"cure\" a psychopath?",
+		"pick": 1
+	},
+	{
+		"text": "What Would Ansony Do?",
+		"pick": 1
+	}
+  ],
+  "whiteCards": [
+	"Screechy in-laws.",
+	"Underage idols.",
+	"Truck of doom.",
+	"Fever-causing rain.",
+	"Wrist-grab.",
+	"Piggyback.",
+	"6'5\" stalkers.",
+	"Century-old kimchi.",
+	"Soju.",
+	"Emotionally scarred chaebol.",
+	"An old condom reserved for First Love.",
+	"Kang Ji-hwan cross-dressing as Empress Ki.",
+	"Unlit cigarette.",
+	"Multiple personalities.",
+	"Offscreen sex with laughtrack.",
+	"Giant kitchen shears.",
+	"Removable phone batteries.",
+	"Kim Tan's cardigan.",
+	"Running from loan sharks while wearing stilletos.",
+	"Sageuk beard of a corrupt prime minister.",
+	"16 episodes of sex-free, longing glances.",
+	"Noble idiocy.",
+	"Jang Geun Seok's airport fashion.",
+	"Kokoros.",
+	"Perfect hair and a PhD in Astrophysics, Biology, Nuclear Research.",
+	"Married man sending inappropriate texts to young girls.",
+	"Proper waste segregation.",
+	"Ajumma perm.",
+	"Divine moobs.",
+	"Apple butts.",
+	"Illegal, unrequited first love.",
+	"Sparkly tracksuits.",
+	"Random gorillas in Episode 1.",
+	"180 IQ.",
+	"A lifetime supply of eel’s tails.",
+	"Uneven breast implants.",
+	"Filming accidents.",
+	"IV drips on set.",
+	"Live shooting.",
+	"Kim Jong Un.",
+	"Drunk recap.",
+	"Shaking a gravely injured person.",
+	"Jang Geu Rae and Mr Oh secret scandal.",
+	"Mary.",
+	"Yoon Eun Hye's drama choices.",
+	"Strip go-stop with halmeoni.",
+	"Eunuch with STD.",
+	"Ryu Seung Ryong's namja ramen CF.",
+	"The ending of Big.",
+	"Kim Woo Bin without eyebrows.",
+	"Song Seung Hoon’s buns of steel (happy trail included).",
+	"Dokko Jin’s paenties.",
+	"Loyal sageuk bodyguard with a huge sword. Wink optional.",
+	"The competence of kdrama cops.",
+	"Doctor-patient non-confidentiality.",
+	"Trapped in a deserted island with Lee Seo-jin.",
+	"Oppa’s infinitesimally improving acting efforts.",
+	"Chinese New Year.",
+	"Mooncakes shaped like Song Jae-rim’s butt.",
+	"Boys that make you seriously consider going to jail.",
+	"Ji Jin Hee’s Chair of Sex in Blood.",
+	"Beating each other up in bed to practice for an action role.",
+	"Cha Seung Won's stache.",
+	"The smell of unwashed sageuk costumes.",
+	"Lee Min Jung's luck in husbands.",
+	"Sung Joon reading bedtime stories.",
+	"Prosthetic jock itch.",
+	"An over-shaved plastic surgery chin.",
+	"Poor heroine w/ $1000 handbag.",
+	"My ability to watch 16 episodes in one day.",
+	"Watching a crappy show for one actor.",
+	"Waiting for the OTP to kiss.",
+	"Kdrama logic.",
+	"Plothole the size of Uranus.",
+	"Writer change.",
+	"Objectification of women in dramas.",
+	"Economic class divide.",
+	"Fatsuit.",
+	"Single mom.",
+	"Talking with your mouth full.",
+	"Dead pet.",
+	"My broken Korean.",
+	"Dead ex-wives that won't stay dead.",
+	"Combined acting talent of TVXQ.",
+	"Second lead getting the girl/guy.",
+	"Wreckage of your sunken OTP ship.",
+	"Arguing with delusional fangirls.",
+	"Classroom of twenty-something actors pretending to be teenagers.",
+	"Bowl haircuts.",
+	"Crying to an Ailee-sung OST.",
+	"One and a half facial expressions.",
+	"Naming your pet chihuahua after your bias.",
+	"Gumihos.",
+	"6-inch long nail art.",
+	"Birth secret you didn't see coming.",
+	"Surprise OTP death.",
+	"Toilet humor.",
+	"Blood Type A.",
+	"Nun-in-training cross-dressing as an idol.",
+	"Crying while eating ramyun.",
+	"Pickled radish.",
+	"Love is the moment.",
+	"Circle lenses.",
+	"Below-the-knee skirts.",
+	"Androgynous features.",
+	"Child actors.",
+	"Last minute change of heart.",
+	"Cinderella makeover.",
+	"So Ji Sub rapping.",
+	"A chaebol-sized painting of yourself in the foyer.",
+	"\"Foreigners\" who speak better Korean than English.",
+	"Evil henchmen that won't die.",
+	"A ledger listing all corporate bribes.",
+	"A flashback within a flashback.",
+	"PPL.",
+	"Confessing to a sleeping person.",
+	"Leaving without saying goodbye.",
+	"Pretending to sleep while someone confesses.",
+	"Late subs (like, by 2 hours).",
+	"Food porn in 1080p.",
+	"Drama-induced food cravings.",
+	"Tasting kimchi for the first time.",
+	"Google translating an actor's IG post.",
+	"A hate essay in 20 tweets.",
+	"Elevator ride with your ex.",
+	"Yoo Seung Ho dressed as god.",
+	"Fear of sex.",
+	"Seaweed soup.",
+	"Forgetting birthdays.",
+	"Crown Prince.",
+	"The strongest sword of Joseon.",
+	"Midnight shopping spree.",
+	"Han River rendezvous.",
+	"Farting when you think you're alone.",
+	"Making orgasmic noises while eating.",
+	"Illegal U-turn.",
+	"Buying a proposal ring for someone who doesn't like you.",
+	"Getting engaged without your knowledge.",
+	"Marrying someone who looks like your dead ex.",
+	"Fighting ajummas for the last pack of discount crabs.",
+	"Sad violin.",
+	"Plotting murder while listening to classical music.",
+	"Punching a mirror.",
+	"Showering with your shirt on.",
+	"Going to sauna.",
+	"3 drums of kimchi.",
+	"Matchmaking secretary.",
+	"HD CCTV.",
+	"Running after buses.",
+	"An orphanage of abandoned chaebols.",
+	"\"I'll tell you later.\"",
+	"Socks-less look.",
+	"The hero's blood.",
+	"Bempire.",
+	"Bosses that never work.",
+	"Twitter handle you can't show your parents.",
+	"Poisoned food truck.",
+	"Kdrama Gods.",
+	"Fate.",
+	"Accidental kiss.",
+	"With tongue.",
+	"Accidental sex.",
+	"Getting engaged alone.",
+	"A horny ghost."
+  ],
+  "Base": {
+    "name": "Base Set",
+    "black": [
+		0,
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		7,
+		8,
+		9,
+		10,
+		11,
+		12,
+		13,
+		14,
+		15,
+		16,
+		17,
+		18,
+		19,
+		20,
+		21,
+		22,
+		23,
+		24,
+		25,
+		26,
+		27,
+		28,
+		29,
+		30,
+		31,
+		32,
+		33,
+		34,
+		35,
+		36,
+		37,
+		38,
+		39,
+		40,
+		41,
+		42,
+		43,
+		44,
+		45,
+		46,
+		47,
+		48,
+		49,
+		50,
+		51,
+		52,
+		53,
+		54,
+		55,
+		56,
+		57,
+		58,
+		59,
+		60,
+		61,
+		62,
+		63,
+		64,
+		65,
+		66,
+		67
+    ],
+    "white": [
+		0,
+		1,
+		2,
+		3,
+		4,
+		5,
+		6,
+		7,
+		8,
+		9,
+		10,
+		11,
+		12,
+		13,
+		14,
+		15,
+		16,
+		17,
+		18,
+		19,
+		20,
+		21,
+		22,
+		23,
+		24,
+		25,
+		26,
+		27,
+		28,
+		29,
+		30,
+		31,
+		32,
+		33,
+		34,
+		35,
+		36,
+		37,
+		38,
+		39,
+		40,
+		41,
+		42,
+		43,
+		44,
+		45,
+		46,
+		47,
+		48,
+		49,
+		50,
+		51,
+		52,
+		53,
+		54,
+		55,
+		56,
+		57,
+		58,
+		59,
+		60,
+		61,
+		62,
+		63,
+		64,
+		65,
+		66,
+		67,
+		68,
+		69,
+		70,
+		71,
+		72,
+		73,
+		74,
+		75,
+		76,
+		77,
+		78,
+		79,
+		80,
+		81,
+		82,
+		83,
+		84,
+		85,
+		86,
+		87,
+		88,
+		89,
+		90,
+		91,
+		92,
+		93,
+		94,
+		95,
+		96,
+		97,
+		98,
+		99,
+		100,
+		101,
+		102,
+		103,
+		104,
+		105,
+		106,
+		107,
+		108,
+		109,
+		110,
+		111,
+		112,
+		113,
+		114,
+		115,
+		116,
+		117,
+		118,
+		119,
+		120,
+		121,
+		122,
+		123,
+		124,
+		125,
+		126,
+		127,
+		128,
+		129,
+		130,
+		131,
+		132,
+		133,
+		134,
+		135,
+		136,
+		137,
+		138,
+		139,
+		140,
+		141,
+		142,
+		143,
+		144,
+		145,
+		146,
+		147,
+		148,
+		149,
+		150,
+		151,
+		152,
+		153,
+		154,
+		155,
+		156,
+		157,
+		158,
+		159,
+		160,
+		161,
+		162,
+		163
+    ]
+  },
+  "FakeSet": {
+	"name" : "Fake Set",
+	"black" : [
+	  0
+	],
+	"white" : [
+	  1,
+	  3,
+	  5,
+	  7
+	]
+  },
+  "order": [
+    "Base",
+	"FakeSet"
+  ]
+}

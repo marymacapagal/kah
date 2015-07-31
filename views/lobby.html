@@ -1,0 +1,13 @@
+<div class="row" id="availableGames" >
+  <div class="col-lg-10">
+  <h1>Open games</h1>
+    <strong id="noGames" ng-show="availableGames.length == 0">No open games found. Use the <em>Create a new game</em> button above to start one.</strong>
+	<ul class="list-unstyled">
+		<li ng-repeat="game in availableGames">
+			<p><button ng-click="joinGame(game.id)" type="button" class="btn btn-xs btn-default" style="margin-right: 10px;">Join Game</button> <i>{{game.name}}</i> - {{game.players}} of {{game.maxPlayers}} players</p>
+		</li>
+	</ul>
+  </div>
+</div>
+
+<p><small>By playing Kdramas Against Humanity, you agree to not to be butthurt by insensitive jokes about kdramas, kpop, and The Fandom.</small></p>
