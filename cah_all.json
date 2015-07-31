@@ -271,6 +271,86 @@
 	{
 		"text": "What Would Ansony Do?",
 		"pick": 1
+	},
+	{
+		"text": "Rim would be perfect for this.",
+		"pick": 1
+	},
+	{
+		"text": "Kingdom Mall has everything. Even ___.",
+		"pick": 1
+	},
+	{
+		"text": "How to spot an OTP?",
+		"pick": 1
+	},
+	{
+		"text": "The one thing a Candy can't leave without.",
+		"pick": 1
+	},
+	{
+		"text": "The biggest scoop Dispatch is waiting to release is about ___.",
+		"pick": 1
+	},
+	{
+		"text": "All rooftop apartments have ___.",
+		"pick": 1
+	},
+	{
+		"text": "Being friendzoned is so much better than ___.",
+		"pick": 1
+	},
+	{
+		"text": "My favorite kdrama trope of all time is ___.",
+		"pick": 1
+	},
+	{
+		"text": "Running Man needs ___ to get back in the ratings game.",
+		"pick": 1
+	},
+	{
+		"text": "He Who Wears The Crown, Bears The ___.",
+		"pick": 1
+	},
+	{
+		"text": "What's Cuter than Lee Hong Ki with a kitten?",
+		"pick": 1
+	},
+	{
+		"text": "When I die, my Scheduler will say, \"I told you to stay away from ___.\"",
+		"pick": 1
+	},
+	{
+		"text": "Kim Woo Bin can generate chemistry with ___.",
+		"pick": 1
+	},
+	{
+		"text": "___ in dramas is such a turn on.",
+		"pick": 1
+	},
+	{
+		"text": "The only way to stop a Truck of Doom is ___.",
+		"pick": 1
+	},
+	{
+		"text": "If my chaebol lover wrist-grabbed me, I would counter it with ___.",
+		"pick": 1
+	},
+	{
+		"text": "Moobs are great, but ___ is better.",
+		"pick": 1
+	},
+	{
+		"text": "The only thing better than Song Jae Rim's applebutt is ___.",
+		"pick": 1
+	},
+	{
+		"text": "Handcuffs and ___ go together.",
+		"pick": 1
+	},
+	{
+		"text": "___ reminds me of Chilbongie.",
+		"pick": 1
 	}
   ],
   "whiteCards": [
@@ -437,7 +517,60 @@
 	"With tongue.",
 	"Accidental sex.",
 	"Getting engaged alone.",
-	"A horny ghost."
+	"A horny ghost.",
+	"Genius.",
+	"One shot.",
+	"Hug-proof Sweater of Hideousness.",
+	"The Body Shop.",
+	"Gaksitaaaaaaaaaal.",
+	"Team Park Kyu!",
+	"Rooftop home.",
+	"Song Seung Hoon's precariously placed towel.",
+	"Almost paradise.",
+	"Bingu TOP.",
+	"Pig-rabbit.",
+	"Murderous wild boar thirsting for an idol's blood.",
+	"Healo.",
+	"Healibers.",
+	"Gu Jun Pyo's fabulous hair.",
+	"Kim Bum playing the saxophone.",
+	"Jeju Island.",
+	"Soul swapping.",
+	"Car accident miscarriage.",
+	"The pure, innocent love of a stalker.",
+	"A henchman with 99.99% accuracy.",
+	"Jealous clingy ex-girlfriend.",
+	"The size of Taecyeon's ears.",
+	"Sparkling abs.",
+	"Psy and Snoop Dogg.",
+	"Lee Min Ho's hair.",
+	"Kdramas Against Humanity.",
+	"Shitty Hunter.",
+	"Strip baduk.",
+	"Fauxcest.",
+	"The Prime Minister's pants.",
+	"Noona romance.",
+	"An uncle with a gambling problem.",
+	"Hot bartender.",
+	"\"Poor girl fashion\".",
+	"Couple lingerie.",
+	"Slapping the mother-in-law back.",
+	"Elena Vashilivnashivanova.",
+	"Yoochun's pinchable cheeks.",
+	"Dead-fish kisses.",
+	"Brooding man-pained showers.",
+	"Ahn Jae Hyeon's versatility.",
+	"Pre-revenge butt-wiggling.",
+	"All the manly ajeossis.",
+	"The perfect curve of a flower boy's eyelashes.",
+	"Queen In-Hyun's Mom.",
+	"EUNDONGAAAAAAAAAAAH!",
+	"Oppa-pout-wiggle.",
+	"Muism.",
+	"Wire Fu.",
+	"Censored tattoo.",
+	"An envelope of cash.",
+	"A VVVVVVVVVVIP."
   ],
   "Base": {
     "name": "Base Set",
@@ -509,7 +642,28 @@
 		64,
 		65,
 		66,
-		67
+		67,
+		68,
+		69,
+		70,
+		71,
+		72,
+		73,
+		74,
+		75,
+		76,
+		77,
+		78,
+		79,
+		80,
+		81,
+		82,
+		83,
+		84,
+		85,
+		86,
+		87,
+		88
     ],
     "white": [
 		0,
@@ -675,7 +829,48 @@
 		160,
 		161,
 		162,
-		163
+		163,
+		164,
+		165,
+		166,
+		167,
+		168,
+		169,
+		170,
+		171,
+		172,
+		173,
+		174,
+		175,
+		176,
+		177,
+		178,
+		179,
+		180,
+		181,
+		182,
+		183,
+		184,
+		185,
+		186,
+		187,
+		188,
+		189,
+		190,
+		191,
+		192,
+		193,
+		194,
+		195,
+		196,
+		197,
+		198,
+		199,
+		200,
+		201,
+		202,
+		203,
+		204
     ]
   },
   "FakeSet": {
