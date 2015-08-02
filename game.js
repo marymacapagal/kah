@@ -73,6 +73,12 @@ function joinGame(game, player) {
         drawWhiteCard(game, joiningPlayer);
     }
 
+	var clonePlayer = getPlayer(game.id, joiningPlayer.id);
+	
+	if (typeof clonePlayer !== "undefined") {
+		removeFromArray(game.players, clonePlayer);
+		joiningPlayer = clonePlayer;
+	}
     game.players.push(joiningPlayer);
 
     // Need to add a start game button, not just start automatically
