@@ -82,7 +82,7 @@ function joinGame(game, player) {
     game.players.push(joiningPlayer);
 
     // Need to add a start game button, not just start automatically
-    if(game.players.length === config.minPlayers) {
+    if(game.players.length >= config.minPlayers) {
         if(!game.isStarted){
             startGame(game);
         } else {
