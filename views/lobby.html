@@ -1,13 +1,24 @@
-<div class="row" id="availableGames" >
-  <div class="col-lg-10">
-  <h1>Open games</h1>
-    <strong id="noGames" ng-show="availableGames.length == 0">No open games found. Use the <em>Create a new game</em> button above to start one.</strong>
-	<ul class="list-unstyled">
-		<li ng-repeat="game in availableGames">
-			<p><button ng-click="joinGame(game.id)" type="button" class="btn btn-xs btn-default" style="margin-right: 10px;">Join Game</button> <i>{{game.name}}</i> - {{game.players}} of {{game.maxPlayers}} players</p>
-		</li>
-	</ul>
-  </div>
+<div id="playername" class="page">
+	<form id="intro" ng-show="inLobby">
+		<h1>Enter a nickname
+			<input size="15" maxlength="32" type="text" id="txt_playername" placeholder="" ng-model="gameSvc.playerName">
+			<a href="#availableGames" class="btn btn-primary slideTo">Next</a>
+		</h1>
+	</form>
 </div>
 
-<p><small>By playing Kdramas Against Humanity, you agree to not to be butthurt by insensitive jokes about kdramas, kpop, and The Fandom.</small></p>
+<div class="row page" id="availableGames" >
+	<div class="col-lg-12">
+		<h1>Join a game from the list below or <a class="btn btn-sm btn-primary" id="a_creategame" href="" ng-click="createGame()">Create a new game</a></h1>
+	</div>
+	
+	<div class="col-lg-12">
+		<h2>Open games</h2>
+		<strong id="noGames" ng-show="availableGames.length == 0">No open games found. Use the <em>Create a new game</em> button above to start one.</strong>
+		<ul class="list-unstyled">
+			<li ng-repeat="game in availableGames">
+				<p><button ng-click="joinGame(game.id)" type="button" class="btn btn-xs btn-default" style="margin-right: 10px;">Join Game</button> <em>{{game.name}}</em> - {{game.players}} of {{game.maxPlayers}} players</p>
+			</li>
+		</ul>
+	</div>
+</div>

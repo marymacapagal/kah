@@ -10,6 +10,10 @@ $(document).ready(function() {
 		$(target).addClass("hidden");
 		return false;
 	});
+	
+	$("#logout").on('click', function() {
+		return confirm("Are you sure you want to leave this game? Your points will be reset to zero.");
+	});
 
 	//prevent pull down to refresh 
 	//http://stackoverflow.com/questions/29008194/disabling-androids-chrome-pull-down-to-refresh-feature

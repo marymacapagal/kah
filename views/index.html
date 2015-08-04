@@ -5,6 +5,7 @@
 		<title>Kdramas Against Humanity (still in beta)</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Le styles -->
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link href="/public/css/bootstrap.min.css" rel="stylesheet">
 		<link href="/public/css/appStyles.css" rel="stylesheet">
 		<style>
@@ -12,7 +13,6 @@
 		</style>
 	</head>
 	<body>
-	<div id="scrollfix">
 		<nav id="kah-header" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
@@ -22,7 +22,9 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="/">Kdramas Against Humanity</a>
+				<span class="navbar-brand" href="/">
+					<span ng-show="inLobby">Kdramas Against Humanity</span>
+					<span ng-show="!inLobby">Playing KAH <a href="/" class="btn btn-danger" id="logout">Leave game</a></span>
 			</div>
 			<div class="navbar-collapse collapse" id="humanity-navbar-collapse">
 				<ul class="nav navbar-nav">
@@ -32,27 +34,22 @@
 			</div>
 		</div>
 	</nav>
-		<div class="container">
+	<div class="container">
 		
-		<form id="intro" ng-show="inLobby">
-		<h1>Hi, <input size="16" maxlength="32" type="text" id="txt_playername" placeholder="(type a nickname)" ng-model="gameSvc.playerName"></h1>
-		</form>
+		<div id="app-container" ng-view></div>
 		
-		<p id="aCreatGame" ng-show="inLobby"><a class="btn btn-primary" id="a_creategame" href="" ng-click="createGame()">Create a new game</a> or join an active game from the list below.</p>
-			
-		<div ng-view></div>
-
-			<br/>
-		</div>
+	</div>
+	
+	<p class="container" style="margin-top: 2.0em;"><small>By playing Kdramas Against Humanity, you agree not to be butthurt by insensitive jokes about kdramas, kpop, and The Fandom.</small></p>
 	
 	<div id="howtoplay" class="hidden">
 		<div class="holder">
-			<b>How to play this horrible game</b>
+			<em>How to play this horrible game</em>
 			<ul>
-				<li>The game starts with a <b>Card Czar</b> (chosen by the computar) displaying a <b>Black Card</b> to the other players.</li>
-				<li>You, the player, will choose a <b>White Card</b> from your hand to complete or answer the Black Card.</li>
+				<li>The game starts with a <em>Card Czar</em> (chosen by the computar) displaying a <em>Black Card</em> to the other players.</li>
+				<li>You, the player, will choose a <em>White Card</em> from your hand to complete or answer the Black Card.</li>
 				<li>After everyone submits their White Card, the Card Czar chooses the funniest one.</li>
-				<li>The player whose answer gets chosen is awarded an <b>Awesome Point</b>.
+				<li>The player whose answer gets chosen is awarded an <em>Awesome Point</em>.
 				<li>Awesome Points are non-redeemable and aren't worth shit. Except for bragging that you have the most horrible sense of humor within your group of friends.</li>
 				<li>The next turn starts with another Card Czar and another Black Card.</li>
 				<li>The game ends when an especially witty and horrible person gets 4 Awesome Points.</li>
@@ -65,14 +62,14 @@
 	
 	<div id="aboutkah" class="hidden">
 		<div class="row holder">
-			<div class="col-sm-2">
+			<!--div class="col-sm-3">
 				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/">
 					<img alt="Creative Commons License" style="display: block; margin-left: auto; margin-right: auto;" src="http://i.creativecommons.org/l/by-nc-sa/2.0/88x31.png" /></a>
-			</div>
-			<div class="col-sm-10">
+			</div-->
+			<div class="col-sm-12">
 				<p>Kdramas Against Humanity is made by Mary, High Priestess of the Cult of Rim. Also Dictator of Drama Land at <a href="http://kdramalaws.wordpress.com" target="_blank">Kdrama Laws</a>.</p>
 				
-				<p>For the technically curious, the actual game is just a fork of <a href="https://github.com/amirrajan/nodejs-against-humanity" target="_blank"><i>NodeJS Against Humanity</i></a>, replacing the original Cards Against Humanity jokes with kdrama ones.</p>
+				<p>For the technically curious, the actual game is just a fork of <a href="https://github.com/amirrajan/nodejs-against-humanity" target="_blank"><em>NodeJS Against Humanity</em></a>, replacing the original Cards Against Humanity jokes with kdrama ones.</p>
 				
 				<p>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 2.0 Generic License</a>.</p>
 				
@@ -82,7 +79,6 @@
 				<!--br/>Last Release:&nbsp;<span app-version></span-->
 			</div>
 		</div>
-	</div>
 	</div>
 
 		<!-- In production use:

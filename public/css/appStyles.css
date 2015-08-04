@@ -1,13 +1,49 @@
 body {
-	background: #112233;
-	color: #F0F0F0;
+	background: #F6F6F6;
+	color: #444;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+em {
+	font-weight: bold;
+	font-style: normal;
+}
+
+.hidden {
+	display: none;
 }
 
 .progress,
 .well,
 .list-group-item {
-	background: #333;
+	background: rgba(0, 0, 0, 0.05);
 }
+
+.btn {
+	border-radius: 1.5em;
+	border-width: 3px;
+}
+
+.navbar {
+	background: #2E2F41;
+	border: 0;
+	min-height: 60px;
+	padding-top: 5px;
+}
+	.navbar-inverse .navbar-brand {
+		color: #FFF;
+		padding-left: 0;
+	}
+
+.page {
+}
+
+#app-container h1 {
+	font-size: 2.0em;
+}
+	#app-container h2 {
+		font-size: 1.5em;
+	}
 
 #aboutkah,
 #howtoplay {
@@ -23,35 +59,36 @@ body {
 }
 	#aboutkah .holder,
 	#howtoplay .holder {
-		background: #032E46;
+		background: #00B6AD;
+		color: #FFF;
 		padding: 20px;
 		max-width: 600px;
 		margin: 0 auto;
 		max-height: 100%;
 		overflow: auto;
 	}
-
-#kah-header {
-}
-	#kah-header a {
-		border: 0;
-		color: #F0F0F0;
+	#aboutkah a,
+	#howtoplay a {
+		color: #005A55;
 	}
-	#kah-header a:active,
-	#kah-header a:hover {
+	#aboutkah a:hover,
+	#howtoplay a:hover {
+	}
+	#aboutkah a.btn,
+	#howtoplay a.btn {
+		color: #FFF;
 	}
 
-#intro {
+#playername {
 }
 	#txt_playername {
-		background: rgba(255, 255, 255, 0.05);
-		border: 0;
-		border-bottom: 5px solid rgba(255, 255, 255, 0.1);
-		color: #FFF;
-		font-style: italic;
+		background: #FFF;
+		border: 3px solid #999;
+		padding: 6px 3px;
+		max-width: 100%;
 	}
 	#txt_playername:focus {
-		background: rgba(255, 255, 255, 0.1);
+		border-color: #2E2F41;
 	}
 
 #aCreatGame {
@@ -62,25 +99,55 @@ body {
 	}
 	
 .blackCard {
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 25px;
-  color: #FFFFFF;
-  background-color: #2c2c2c;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
+	background-color: #00B6AD;
+	border-radius: 0;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 30px;
+	padding: 20px 0;
 }
+	.blackCard p {
+		display: block;
+		margin-left: 72px;
+		margin-bottom: 0;
+		padding-right: 20px;
+	}
+	.blackCard:before{
+		content: "Q:";
+		display: block;
+		float: left;
+		font-size: 36px;
+		line-height: 30px;
+		text-align: center;
+		width: 72px;
+	}
 
-.test1 {background-color: #269abc;}
-.test2 {background-color: #3c763d}
-
-.whiteCardItems {
-  border-top: darkgray solid 3px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+#whiteCards, #selectedWhiteCards	{
+	background: #FFF;
+	color: #444;
+	font-size: 18px;
+	vertical-align: middle;
 }
+	.whiteCardItems {
+		border-top: darkgray solid 3px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
 
 .alert {
-  font-size: 16px;
+	font-size: 16px;
 }
+
+a#logout {
+	background: #F06050;
+	border-radius: 1.5em;
+	border: 3px solid #D43F3A;
+	float: right;
+	padding: 6px 12px;
+	margin-left: 20px;
+	margin-top: -9px;
+}
+	a#logout:hover {
+		border-color: #AC2925;
+	}
