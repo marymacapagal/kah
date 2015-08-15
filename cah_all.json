@@ -69,10 +69,6 @@
 		"pick": 1
 	},
 	{
-		"text": "I'm your missing chaebol child and I have a ___-shaped birthmark to prove it.",
-		"pick": 1
-	},
-	{
 		"text": "I have a fantasy drama about waking up with ___.",
 		"pick": 1
 	},
@@ -728,8 +724,7 @@
 		84,
 		85,
 		86,
-		87,
-		88
+		87
     ],
     "white": [
 		0,
