@@ -2,65 +2,109 @@
 <html lang="en" ng-app="myApp" ng-controller="HomeCtrl">
 	<head>
 		<meta charset="utf-8">
-		<title>Kdramas Against Humanity (still in beta)</title>
+		<title>Kdramas Against Humanity (beta)</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Le styles -->
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link href="/public/css/bootstrap.min.css" rel="stylesheet">
+		
+		
+		<link rel="stylesheet" type="text/css" href="/public/css/SidebarTransitions/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="/public/css/SidebarTransitions/component.css" />
+		<script src="/public/js/SidebarTransitions/modernizr.custom.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+		
+		
 		<link href="/public/css/appStyles.css" rel="stylesheet">
-		<style>
-			body { padding-top: 60px; }
-		</style>
+		
 	</head>
-	<body>
-		<nav id="kah-header" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#humanity-navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				</button>
-				<span class="navbar-brand" href="/">
-					<span ng-show="inLobby">Kdramas Against Humanity</span>
-					<span ng-show="!inLobby">Playing KAH <a href="/" class="btn btn-danger" id="logout">Leave game</a></span>
-			</div>
-			<div class="navbar-collapse collapse" id="humanity-navbar-collapse">
-				<ul class="nav navbar-nav">
-				<li><a href="#howtoplay" id="a_howtoplay">How to play</a></li>
-				<li><a href="#aboutkah" id="a_aboutkah">About KAH</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-	<div class="container">
-		
-		<div id="app-container" ng-view></div>
-		
-	</div>
+	<body ng-class="{pageLobby: inLobby}">
 	
-	<p class="container" style="margin-top: 2.0em;"><small>By playing Kdramas Against Humanity, you agree not to be butthurt by insensitive jokes about kdramas, kpop, and The Fandom.</small></p>
 	
-	<div id="howtoplay" class="hidden">
-		<div class="holder">
-			<em>How to play this horrible game</em>
+	<div id="st-container" class="st-container">
+		<!-- 
+			these menus will be on top of the push wrapper
+		-->
+		
+		<nav class="st-menu st-effect-2" id="kah-menu">
+			<h2 class=""><span class="icon-ion ion-sad-outline"></span> Kdramas Against Humanity</h2>
 			<ul>
-				<li>The game starts with a <em>Card Czar</em> (chosen by the computar) displaying a <em>Black Card</em> to the other players.</li>
-				<li>You, the player, will choose a <em>White Card</em> from your hand to complete or answer the Black Card.</li>
-				<li>After everyone submits their White Card, the Card Czar chooses the funniest one.</li>
-				<li>The player whose answer gets chosen is awarded an <em>Awesome Point</em>.
-				<li>Awesome Points are non-redeemable and aren't worth shit. Except for bragging that you have the most horrible sense of humor within your group of friends.</li>
-				<li>The next turn starts with another Card Czar and another Black Card.</li>
-				<li>The game ends when an especially witty and horrible person gets 4 Awesome Points.</li>
+				<li><button id="a_howtoplay" class="open-popup" data-target="#howtoplay"><span class="icon-ion ion-play"></span> How to play</button></li>
+				<li><button id="a_faq" class="open-popup" data-target="#faq"><span class="icon-ion ion-help-circled"></span> Frequently Asked Qs</button></li>
+				<li><button id="a_aboutkah" class="open-popup" data-target="#aboutkah"><span class="icon-ion ion-information-circled"></span> About KAH</button></li>
+				<li><button class="" id="closeMenu"><span class="icon-ion ion-close-round"></span> Close menu</a></button>
+				<li ng-show="!inLobby"><a id="logout" class="" href="/"><span class="icon-ion ion-arrow-left-c"></span> Leave game</a></li>
+			</ul>
+		</nav>
+
+		<!-- content push wrapper -->
+		<div class="st-pusher">
+
+			
+			<div class="st-content container-fluid"><!-- this is the wrapper for the content -->
+				<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+					<div class="row">
+						<div class="col-xs-1 col-sm-2 col-menu-icon">
+							<button data-effect="st-effect-2" class="show-menu" title="Show menu"><span class="ion-gear-a"></span></button>
+						</div>
+					
+						<div class="col-xs-10 col-sm-8" id="app-container" ng-view></div>
+					</div>
+					
+					<div class="row">
+						<p class="col-xs-offset-2 col-xs-8 text-center"><small>By playing Kdramas Against Humanity, you agree not to be butthurt by insensitive jokes about kdramas, kpop, and The Fandom.</small></p>
+					</div>
+					
+				</div><!-- /st-content-inner -->
+			</div><!-- /st-content -->
+		</div><!-- /st-pusher -->
+	</div><!-- /st-container -->
+	
+	
+	<div id="howtoplay" class="hidden guide-popup">
+		<div class="holder">
+		
+			<h1>The Game</h1>
+			<ul>
+				<li><p>KAH is played in rounds with at least 3 players.</p></li>
+				<li><p>Each round starts with a kdrama-related question or statement. <em>Your goal is to answer or complete the questions using Answer Cards</em> given to you randomly by the game.</p>
+					<img src="/public/img/scrn_answering.png" class="center-block img-responsive" /><br>
+				</li>
+				<li><p>Once everyone has submitted an Answer Card, the Card Mama chooses the best one, awarding that player an Awesome Point.</p>
+					<img src="/public/img/scrn_selecting.png" class="center-block img-responsive" /><br>
+				</li>
+				<li><p>When everyone is ready, a new round will start. The game will pick another player to act as Card Mama while the rest get a new Answer card to replace the one used in the previous round.</p></li>
+				<li><p><em>The game ends when someone collects 4 Awesome Points.</em></p></li>
 			</ul>
 			
-			<p class="text-right"> <a href="#howtoplay" class="btn btn-large btn-danger close-popup">Got it (close this)</a></p>
+			<p class="text-right"> <button data-target="#howtoplay" class="btn btn-large btn-danger close-popup">Got it (close this)</button></p>
 		</div>
 		
 	</div>
 	
-	<div id="aboutkah" class="hidden">
+	<div id="faq" class="hidden guide-popup">
+		<div class="holder">
+			<h1>Help, I'm Card Mama! What do I do?</h1>
+			<p>First, you should wait for all the peasants to send in their answers. Once they're done, your screen will update with all the answers. Select the one you like the most and that's it.</p>
+			
+			<h1>Someone is just there for the past 5 minutes. Not answering or picking a card.</h1>
+			<p>Ditch them! (It could, maybe, possibly, be a bug with Mary's code.)<br>
+			If you know the idle player, Mary recommends giving them a "gentle" shoutout on twitter/fb/elsewhere to move their butt.</p>
+			
+			<h1>Can't we have a way to tell someone it's her turn to make a move?</h1>
+			<p>Mary is working on that! Either a small chat room inside each game or a small *plonk* sound like when you get a new message on facebook or google chat.<br>
+			This is all dependent on Mary's coding powers though, which are not very good right now. *sadface*</p>
+			
+			<h1>Why is it called Card Mama? That's rude to females or something.</h1>
+			<p>No, it's not. :( It means royalty. And Mary knows this because of her very expert and reliable and 100% correct knowledge gleaned from watching sageuks.</p>
+			
+			<p class="text-right"> <button data-target="#faq" class="btn btn-large btn-danger close-popup">Got it (close this)</button></p>
+		</div>
+		
+	</div>
+	
+	<div id="aboutkah" class="hidden guide-popup">
 		<div class="row holder">
 			<!--div class="col-sm-3">
 				<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/">
@@ -75,7 +119,7 @@
 				
 				<p>This horrible website is not affiliated in any way with the official and also horrible Cards Against Humanity game.</p>
 				
-				<p class="text-right"> <a href="#aboutkah" class="btn btn-large btn-danger close-popup">Got it (close this)</a></p>
+				<p class="text-right"> <button data-target="#aboutkah" class="btn btn-large btn-danger close-popup">Got it (close this)</button></p>
 				<!--br/>Last Release:&nbsp;<span app-version></span-->
 			</div>
 		</div>
@@ -100,5 +144,10 @@
 		<script src="/public/js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="/public/js/kah.js" type="text/javascript"></script>
 		<script src="/socket.io/socket.io.js"></script>
+		
+		
+		
+		<script src="/public/js/SidebarTransitions/classie.js"></script>
+		<script src="/public/js/SidebarTransitions/sidebarEffects.js"></script>
 	</body>
 </html>

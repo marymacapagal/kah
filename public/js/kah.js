@@ -1,18 +1,19 @@
 $(document).ready(function() {
-	$("#a_howtoplay, #a_aboutkah").on('click', function() {
-		var target = $(this).attr("href");
-		$(target).removeClass("hidden");
+	$(".open-popup").on('click', function() {
+		var target = $(this).data("target");
+		$(target).toggleClass("hidden");
 		return false;
 	});
 	
 	$(".close-popup").on('click', function() {
-		var target = $(this).attr("href");
+		var target = $(this).data("target");
 		$(target).addClass("hidden");
 		return false;
 	});
 	
 	$("#logout").on('click', function() {
-		return confirm("Are you sure you want to leave this game? Your points will be reset to zero.");
+		var leavegame = confirm("Are you sure you want to leave this game? Your points will be reset to zero.");
+		return leavegame;
 	});
 
 	//prevent pull down to refresh 

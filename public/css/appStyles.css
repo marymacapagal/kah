@@ -1,7 +1,29 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+html,
+body,
+.st-container,
+.st-pusher,
+.st-content {
+	height: 100%;
+	min-height: 100vh;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
 body {
-	background: #F6F6F6;
 	color: #444;
 	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #00948A;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #8FD7CF;
+	outline: none;
 }
 
 em {
@@ -9,9 +31,44 @@ em {
 	font-style: normal;
 }
 
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+
+.clearfix:after {
+	clear: both;
+}
+
 .hidden {
 	display: none;
 }
+
+.progress-bar {
+	background-color: #00B6AD;
+}
+
+/* Override bootstrap default styles for buttons */
+.btn {
+	border-radius: 1.5em;
+	border-width: 3px;
+}
+	.btn-normal {
+		font-size: 1.0em;
+	}
+	.btn-primary {
+		border-color: #00948A;
+		background-color: #00B6AD;
+	}
+	.btn-primary:hover,
+	.btn-primary:active,
+	.btn-primary:focus {
+		background-color: #00948A;
+		border-color: #005A55;
+		outline: none;
+	}
 
 .progress,
 .well,
@@ -19,76 +76,87 @@ em {
 	background: rgba(0, 0, 0, 0.05);
 }
 
-.btn {
-	border-radius: 1.5em;
-	border-width: 3px;
-}
-
-.navbar {
+button.show-menu {
 	background: #2E2F41;
-	border: 0;
-	min-height: 60px;
-	padding-top: 5px;
-}
-	.navbar-inverse .navbar-brand {
-		color: #FFF;
-		padding-left: 0;
-	}
-
-.page {
-}
-
-#app-container h1 {
-	font-size: 2.0em;
-}
-	#app-container h2 {
-		font-size: 1.5em;
-	}
-
-#aboutkah,
-#howtoplay {
-	background: rgba(0, 0, 0, 0.6);
-	line-height: 1.5;
-	padding: 150px 30px 20px;
-	position: absolute;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'Montserrat', Calibri, Arial, sans-serif;
+	font-size: 2em;
+	letter-spacing: 1px;
+	margin: 3px 2px;
+	padding: 0.25em 0.5em;
+	position: fixed;
 		top: 0;
-		left: 0;
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
+	text-transform: uppercase;
+	transition: background 0.3s ease;
 }
-	#aboutkah .holder,
-	#howtoplay .holder {
-		background: #00B6AD;
-		color: #FFF;
-		padding: 20px;
-		max-width: 600px;
-		margin: 0 auto;
-		max-height: 100%;
-		overflow: auto;
-	}
-	#aboutkah a,
-	#howtoplay a {
-		color: #005A55;
-	}
-	#aboutkah a:hover,
-	#howtoplay a:hover {
-	}
-	#aboutkah a.btn,
-	#howtoplay a.btn {
-		color: #FFF;
-	}
 
-#playername {
+button.show-menu:hover {
+	background: #00b6ad;
 }
+
+#app-container {
+	margin: 0 auto;	
+}
+
+.pageLobby #app-container {
+}
+	.pageLobby #app-container em {
+		color: #2E2F41;
+	}
+	#intro {
+		color: #888;
+		font-size: 2em;
+		line-height: 1.3;
+		margin: 0.25em 0 1.0em;
+	}
+	#intro h1 {
+		margin: 0;
+		font-weight: 700;
+	}
+		#intro h1 span.subtitle {
+			color: #E6E6E6;
+			display: block;
+			font-size: 0.5em;
+		}
+	#intro h2 {
+		font-size: 1.0em;
+		font-weight: 700;
+		margin-top: 1.75em;
+	}
+	#intro p {
+		font-size: 0.5em;
+	}
+	#intro #instructions {
+		display: block;
+		margin-bottom: 1em;
+	}
 	#txt_playername {
 		background: #FFF;
-		border: 3px solid #999;
-		padding: 6px 3px;
+		border: 0.15em solid #888;
+		color: #2E2F41;
+		font-size: 1.3em;
+		font-weight: 700;
 		max-width: 100%;
+		padding: 6px 3px;
+		transition: all 0.3s ease;
 	}
 	#txt_playername:focus {
 		border-color: #2E2F41;
+	}
+	#intro .subtitle {
+		color: #888;
+		display: block;
+		font-size: 0.5em;
+		line-height: 1.25;
+	}
+	#intro .btn-sample {
+		border-radius: 0;
+		color: #888;
+		display: inline;
+		padding: 0;
 	}
 
 #aCreatGame {
@@ -98,6 +166,11 @@ em {
 		color: #FFF;
 	}
 	
+#availableGames {
+	
+}
+
+
 .blackCard {
 	background-color: #00B6AD;
 	border-radius: 0;
@@ -123,31 +196,91 @@ em {
 		width: 72px;
 	}
 
-#whiteCards, #selectedWhiteCards	{
+#whiteCards,
+#selectedWhiteCards,
+#availableGames	{
 	background: #FFF;
+	border-radius: 4px;
 	color: #444;
-	font-size: 18px;
-	vertical-align: middle;
-}
-	.whiteCardItems {
-		border-top: darkgray solid 3px;
-		padding-top: 5px;
-		padding-bottom: 5px;
-	}
-
-.alert {
 	font-size: 16px;
+	vertical-align: middle;
+	width: 100%;
 }
+	#availableGames li,
+	#whiteCards tr,
+	#selectedWhiteCards tr {
+		border-bottom: 1px solid #EEE;
+	}
+		#availableGames li,
+		#whiteCards td,
+		#selectedWhiteCards td {
+			padding: 5px 15px 5px 5px;
+		}
+	ul#availableGames > li:last-child,
+	#whiteCards tr:last-child,
+	#selectedWhiteCards tr:last-child {
+		border-bottom: 0;
+	}
 
 a#logout {
-	background: #F06050;
-	border-radius: 1.5em;
-	border: 3px solid #D43F3A;
-	float: right;
-	padding: 6px 12px;
-	margin-left: 20px;
-	margin-top: -9px;
+	background: #890606;
 }
 	a#logout:hover {
-		border-color: #AC2925;
+		background: #F01A15;
 	}
+
+
+.guide-popup {
+	background: rgba(0, 0, 0, 0.6);
+	line-height: 1.5;
+	padding: 2.0em 1.5em 1.0em;
+	position: absolute;
+		top: 0;
+		left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	z-index: 110;
+}
+	.guide-popup .holder {
+		background: #00B6AD;
+		color: #FFF;
+		padding: 20px;
+		max-width: 600px;
+		margin: 0 auto;
+		max-height: 100%;
+		overflow: auto;
+	}
+	.guide-popup a {
+		color: #005A55;
+	}
+	.guide-popup a.btn {
+		color: #FFF;
+	}
+	.guide-popup h1 {
+		font-size: 1.5em;
+	}
+
+/* Media queries */
+
+@media screen and (max-width: 64em) {
+	.st-content {
+	}
+	#intro {
+		font-size: 28px;
+		margin-top: 0.25em;
+	}
+	#intro .subtitle {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#intro {
+		font-size: 24px;
+		margin: 0 auto 0.5em;
+	}
+	.col-menu-icon {
+		z-index: 120;
+	}
+}

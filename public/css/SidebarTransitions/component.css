@@ -1,0 +1,180 @@
+/* Put background color here to avoid floating text during menu slide out animation */
+.st-content {
+	background: #F0F0F0;
+	font-size: 16px;
+	overflow-y: scroll;
+}
+	.pageLobby .st-content {
+	}
+
+.st-content,
+.st-content-inner {
+	position: relative;
+}
+
+.st-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.st-pusher {
+	position: relative;
+	left: 0;
+	z-index: 99;
+	height: 100%;
+	perspective: 1000px;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.st-pusher::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+.st-menu-open .st-pusher::after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.st-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	visibility: hidden;
+	width: 320px;
+	height: 100%;
+	background: #2E2F41;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.st-menu::after {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	content: '';
+	opacity: 1;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.st-menu-open .st-menu::after {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+	transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+}
+
+.show-menu {
+	transition-property: opacity;
+	transition-duration: 0.25s;
+	transition-delay: 0.5s;
+}
+
+.st-menu-open .show-menu {
+	opacity: 0;
+	transition-delay: 0s;
+}
+
+/* content style */
+
+.st-menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.st-menu h2 {
+	margin: 0;
+	padding: 1em;
+	color: rgba(255,255,255,1.0);
+	text-shadow: 0 0 1px rgba(0,0,0,0.1);
+	font-weight: 700;
+	font-size: 1.3em;
+}
+
+.st-menu .icon-ion {
+	font-size: 1.2em;
+	margin-right: 5px;
+}
+
+.st-menu ul li a,
+.st-menu ul li button {
+	background: none;
+	border: 0;
+	display: block;
+	padding: 1em 1em 1em 1.75em;
+	outline: none;
+	box-shadow: inset 0 -1px rgba(0,0,0,0.2);
+	color: rgba(255,255,255,0.92);
+	text-transform: uppercase;
+	text-shadow: 0 0 1px rgba(255,255,255,0.1);
+	text-align: left;
+	letter-spacing: 1px;
+	font-weight: 400;
+	-webkit-transition: background 0.3s, box-shadow 0.3s, padding 0.3s;
+	transition: background 0.3s, box-shadow 0.3s, padding 0.3s;
+	width: 100%;
+}
+
+.st-menu ul li:first-child a,
+.st-menu ul li:first-child button {
+	box-shadow: inset 0 -1px rgba(0,0,0,0.2), inset 0 1px rgba(0,0,0,0.2);
+	text-decoration: none;
+}
+
+.st-menu ul li a:hover,
+.st-menu ul li a:active,
+.st-menu ul li button:hover,
+.st-menu ul li button:active {
+	background: #00b6ad;
+	box-shadow: inset 0 -1px rgba(0,0,0,0);
+	color: #fff;
+	padding-left: 1.2em;
+	text-decoration: none;
+}
+
+/* Individual effects */
+
+/* Effect 2: Reveal */
+.st-effect-2.st-menu-open .st-pusher {
+	-webkit-transform: translate3d(320px, 0, 0);
+	transform: translate3d(320px, 0, 0);
+}
+
+.st-effect-2.st-menu {
+	z-index: 1;
+}
+
+.st-effect-2.st-menu-open .st-effect-2.st-menu {
+	visibility: visible;
+	-webkit-transition: -webkit-transform 0.5s;
+	transition: transform 0.5s;
+}
+
+.st-effect-2.st-menu::after {
+	display: none;
+}
+
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+.no-csstransforms3d .st-pusher,
+.no-js .st-pusher {
+	padding-left: 320px;
+}

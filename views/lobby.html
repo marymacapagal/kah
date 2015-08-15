@@ -1,24 +1,39 @@
-<div id="playername" class="page">
-	<form id="intro" ng-show="inLobby">
-		<h1>Enter a nickname
-			<input size="15" maxlength="32" type="text" id="txt_playername" placeholder="" ng-model="gameSvc.playerName">
-			<a href="#availableGames" class="btn btn-primary slideTo">Next</a>
+<div class="">
+	<form id="intro">
+		<h1>
+			<span class="hidden-xs">Welcome to</span>
+			<em>Kdramas Against Humanity.</em>
+			<span class="subtitle"><em>A game.</em> For horrible kdrama fans.</span>
 		</h1>
+		
+		
+		<h2><em>To start, type your player name.</em></h2>
+		<input size="20" maxlength="32" type="text" id="txt_playername" placeholder="" ng-model="gameSvc.playerName">
+		<p id="instructions">
+			Tip: you can always check the menu button <button class="btn btn-sample ion-gear-a"></button> at the top for guides and other options.
+		</p>
+		
+		<h2><em>Next, join a game.</em></h2>
+		<div ng-show="availableGames.length == 0">
+			<p>Oups. No open games found.</p>
+			<p><a class="btn btn-normal btn-primary" href="" ng-click="createGame()">Create a new game</a></p>
+		</div>
+		
+		<div ng-show="availableGames.length > 0">
+			<p>Choose a game below or <button class="btn btn-xs btn-primary" ng-click="createGame()">Create a new game</button></p>
+			<ul  id="availableGames" class="list-unstyled">
+				<li ng-repeat="game in availableGames">
+					<button ng-click="joinGame(game.id)" type="button" class="btn btn-sm btn-default" style="margin-right: 10px;">Join Game</button>
+					<em>{{game.name}}</em> - {{game.players}} of {{game.maxPlayers}} players
+				</li>
+			</ul>
+		</div>
+		
+		<h2>That's it!</h2>
 	</form>
-</div>
-
-<div class="row page" id="availableGames" >
-	<div class="col-lg-12">
-		<h1>Join a game from the list below or <a class="btn btn-sm btn-primary" id="a_creategame" href="" ng-click="createGame()">Create a new game</a></h1>
-	</div>
 	
-	<div class="col-lg-12">
-		<h2>Open games</h2>
-		<strong id="noGames" ng-show="availableGames.length == 0">No open games found. Use the <em>Create a new game</em> button above to start one.</strong>
-		<ul class="list-unstyled">
-			<li ng-repeat="game in availableGames">
-				<p><button ng-click="joinGame(game.id)" type="button" class="btn btn-xs btn-default" style="margin-right: 10px;">Join Game</button> <em>{{game.name}}</em> - {{game.players}} of {{game.maxPlayers}} players</p>
-			</li>
-		</ul>
+	<div class="hidden">
+		<h1>BUGS</h1>
+			<p>Idle players still getting transported to their old rooms... (CHECK FUNCTION THAT BROADCASTS UPDATEGAME)</p>
 	</div>
 </div>

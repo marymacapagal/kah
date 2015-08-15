@@ -1,21 +1,30 @@
 <div class="row" ng-show="!!gameError">
 	<div class="alert alert-danger">
 		{{gameError}}
+		<a href="/">Back to game selection screen?</a>
 	</div>
 </div>
 <div class="row">
-	<h1 id="gameName">Playing as <em>{{currentPlayer.name}}</em> in <em>{{game.name}}</em> <small ng-show="!game.isStarted">(Waiting for players to join.)</small></h1>
+	<h1 id="gameName">Playing as <em>{{currentPlayer.name}}</em> in <em>{{game.name}}</em> <small ng-show="!game.isStarted">(Waiting for peasants to join.)</small></h1>
 </div>
+
 <div id="notificationWaitingOnRound" ng-show="!game.isStarted" class="center row alert alert-warning">Waiting for round to start.</div>
+
 <div class="row blackCard" ng-show="game.isStarted"><p ng-bind-html="game.currentBlackCard.text"></p></div>
 <br>
-<div id="notificationCardCzar" ng-show="currentPlayer.isCzar" class="row alert alert-info center">You are the Card Czar.</div>
-<div id="notificationSelectWinner" ng-show="showNotificationSelectWinner()" class="row alert alert-info center">Select a card to be the winner.</div>
-<div id="notificationSelectCard" ng-show="showNotificationSelectCard()" class="row alert alert-info center">Select a card to play.</div>
-<div id="notificationWaitingOnCzar" ng-show="showNotificationWaitingOnCzar()" class="row alert alert-warning center">Waiting for the Card Czar to pick winner.</div>
-<div id="notificationWaitingOnCards" ng-show="showNotificationWaitingOnCards()" class="row alert alert-warning center">Waiting for other players to choose...</div>
+
+<div ng-show="showNotificationSelectWinner()" class="row alert alert-warning center"><em>You are the Card Mama.</em> Select the answer that pleases you.</div>
+<div ng-show="currentPlayer.isCzar && !showNotificationSelectWinner() && !game.isReadyForReview" class="row alert alert-info center"><em>You are the Card Mama.</em> Currently waiting for your peasants to answer...</div>
+
+<!--div id="notificationCardCzar" ng-show="currentPlayer.isCzar" class="row alert alert-info center">You are the Card Czar.</div>
+<div id="notificationSelectWinner" ng-show="showNotificationSelectWinner()" class="row alert alert-info center">Select a card to be the winner.</div-->
+
+<div id="notificationSelectCard" ng-show="showNotificationSelectCard()" class="row alert alert-info center">Select a card to please the Card Mama.</div>
+<div id="notificationWaitingOnCzar" ng-show="showNotificationWaitingOnCzar()" class="row alert alert-warning center">Waiting for the Card Mama to choose a winner.</div>
+<div id="notificationWaitingOnCards" ng-show="showNotificationWaitingOnCards() && !currentPlayer.isCzar" class="row alert alert-warning center">Waiting for other peasants to choose...</div>
+
 <div class="row" ng-show="showWhiteCardList()">
-	<table id="whiteCards" class="table">
+	<table id="whiteCards" class="">
 		<tbody id="whiteCardSelection">
 			<tr ng-repeat="whiteCard in currentPlayer.cards">
 				<td>
@@ -27,7 +36,7 @@
 	</table>
 </div>
 <div class="row" ng-show="showSelectedWhiteCardList()">
-	<table id="selectedWhiteCards" class="table">
+	<table id="selectedWhiteCards" class="">
 		<tbody>
 			<tr ng-repeat="player in game.players | filter:whiteCardNonNull" ng-class="getWinningCardClass(player.selectedWhiteCardId)">
 				<td>
@@ -39,11 +48,14 @@
 		</tbody>
 	</table>
 </div>
-<div id="notificationRoundComplete" ng-show="game.isReadyForReview" class="row alert alert-info center">Winner selected, next round will start when everyone is ready</div>
+
+<br>
+<div id="notificationRoundComplete" ng-show="game.isReadyForReview" class="row alert alert-info center">Winner selected, next round will start when everyone is ready.</div>
 <div id="buttonNextRound" ng-show="game.isReadyForReview && !currentPlayer.isReady" class="row">
 	<button ng-click="readyForNextRound()" ng-show="!game.isOver" class="btn btn-lg btn-primary btn-block">Ready for next round? (click here)</button>
 	<button ng-click="readyForNextRound()" ng-show="game.isOver" class="btn btn-lg btn-primary btn-block">Game over! Start a new game?</button>
 </div>
+
 <div class="row">
 	<h4>Round Progress</h4>
 	<div class="progress">
